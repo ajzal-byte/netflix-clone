@@ -4,8 +4,10 @@ import { Nav } from "./components";
 const HomeScreen = () => {
   return (
     <div className='homeScreen'>
-        HomeScreen
+        {/* HomeScreen */}
         <Nav />
+        {/* <Banner /> */}
+        {/* <Row /> */}
     </div>
   )
 }
