@@ -1,3 +1,4 @@
 import Nav from "./Nav";
+import Banner from "./Banner";
 
-export {Nav};
+export {Nav, Banner};

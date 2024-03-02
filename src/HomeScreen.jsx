@@ -1,12 +1,12 @@
 import "./HomeScreen.css";
-import { Nav } from "./components";
+import { Nav, Banner } from "./components";
 
 const HomeScreen = () => {
   return (
     <div className='homeScreen'>
         {/* HomeScreen */}
         <Nav />
-        {/* <Banner /> */}
+        <Banner />
         {/* <Row /> */}
     </div>
   )
