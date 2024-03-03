@@ -1,0 +1,21 @@
+.planSection{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.planSection:hover{
+  opacity: 1;
+}
+
+.planSection button{
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
