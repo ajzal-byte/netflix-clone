@@ -13,7 +13,6 @@ const Row = ({ title, fetchURL, isLargeRow = false }) => {
     };
     fetchData();
   }, [fetchURL]);
-  console.log(movies);
   return (
     <div className="row">
       <h2 style={{ color: "white" }}>{title}</h2>
