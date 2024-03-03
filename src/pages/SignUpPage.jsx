@@ -26,7 +26,15 @@ const SignUpPage = () => {
         passwordRef.current.value
       )
       .then((authUser) => console.log(authUser))
-      .catch((error) => toast.error(error.message));
+      .catch((error) =>
+        toast.error(error.message, {
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        })
+      );
   };
   return (
     <div className="signupPage">
