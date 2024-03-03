@@ -15,7 +15,7 @@ const Row = ({ title, fetchURL, isLargeRow = false }) => {
   }, [fetchURL]);
   return (
     <div className="row">
-      <h2 style={{ color: "white" }}>{title}</h2>
+      <h2 style={{ color: "white", marginTop: "10px" }}>{title}</h2>
       <div className="row__posters">
         {movies?.map(
           (movie) =>
@@ -23,7 +23,6 @@ const Row = ({ title, fetchURL, isLargeRow = false }) => {
               (!isLargeRow && movie.backdrop_path)) && (
               <img
                 className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                key={movie.id}
                 src={`https://image.tmdb.org/t/p/original${
                   isLargeRow ? movie?.poster_path : movie?.backdrop_path
                 }`}
