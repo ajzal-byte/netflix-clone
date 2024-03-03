@@ -1,4 +1,5 @@
 import HomeScreen from "./HomeScreen";
 import LoginPage from "./LoginPage"
+import ProfilePage from "./ProfilePage";
 
-export {HomeScreen, LoginPage};
+export {HomeScreen, LoginPage, ProfilePage};

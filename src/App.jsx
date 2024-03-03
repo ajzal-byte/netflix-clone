@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import {HomeScreen, LoginPage} from "./pages"
+import {HomeScreen, LoginPage, ProfilePage} from "./pages"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from 'react-hot-toast';
 import { auth } from "./firebase";
@@ -22,7 +22,7 @@ function App() {
         }))
       } else {
         // Logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
@@ -39,7 +39,9 @@ function App() {
         ) : (
           <Routes>
             <Route exact path="/" element={<HomeScreen />}></Route>
+            <Route exact path="/profile" element={<ProfilePage />}></Route>
           </Routes>
+          
         )}
       </Router>
     </div>
