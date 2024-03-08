@@ -9,7 +9,7 @@ This project is a Netflix clone built using React, TMDB API for fetching movie d
 - Firebase for user authentication
 - Firestore for fetching the 'plans' collection
 - Redux Toolkit for 'user' state management
-- Click on images to view trailers
+- Click on movie posters to view trailers
 
 
 ## Screenshots:
